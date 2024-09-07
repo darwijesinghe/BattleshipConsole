@@ -24,7 +24,7 @@ BattleshipConsole is a console application that interacts with the BattleshipAPI
 
 ### HTTP Header
 
-- Keep global constant (ex: my-console-app) value to your application.
+- Keep global constant (ex: my-console-app) value for your application.
 - Add the custom 'X-consumer' HTTP header and that global value with each request. This value will be used to uniquely identify individual applications and is essential for handling game-specific data caching processes.
 
 ## Support
