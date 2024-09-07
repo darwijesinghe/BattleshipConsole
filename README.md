@@ -22,10 +22,6 @@ BattleshipConsole is a console application that interacts with the BattleshipAPI
 - .NET 6 SDK or later
 - Visual Studio 2022 or VS Code with C# extension
 
-### HTTP Header
-
-- Add the custom 'X-consumer' HTTP header to each request. This header will be used to uniquely identify individual users and is essential for handling user-specific data caching processes.
-
 ## Support
 
 Darshana Wijesinghe  
