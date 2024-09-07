@@ -1,4 +1,4 @@
-# BattleshipAPI
+# BattleshipConsole
 
 BattleshipConsole is a console application that interacts with the BattleshipAPI. It consumes the RESTful API to implement the classic Battleship game logic. The application features random ship placement on a grid and allows players to fire shots to try and sink their opponent's ships. Built using .NET 6, the application follows a client-server architecture pattern, with the console app serving as the client communicating with the BattleshipAPI.
 
