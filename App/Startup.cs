@@ -9,8 +9,8 @@ namespace App
     public class Startup
     {
         // services
-        private readonly ILogger<Startup> _logger;
-        private readonly IShipService _shipService;
+        private readonly ILogger<Startup>    _logger;
+        private readonly IShipService   _shipService;
         private readonly IShootService _shootService;
 
         public Startup(ILogger<Startup> logger, IShipService shipService, IShootService shootService)
@@ -349,6 +349,7 @@ namespace App
                 throw;
             }
 
+            // returns default shot
             return new ShootPosition(0, 0);
         }
 
@@ -386,7 +387,6 @@ namespace App
             try
             {
                 // ingredients
-                var processing = true;
                 var spinner    = new[] { "|", "/", "-", "\\" };
                 int counter    = 0;
 
@@ -477,6 +477,5 @@ namespace App
             Console.WriteLine();
             Console.ResetColor();
         }
-
     }
 }

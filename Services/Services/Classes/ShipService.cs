@@ -9,19 +9,19 @@ namespace Services.Services.Classes
     public class ShipService : IShipService
     {
         // services
-        private ILogger<ShipService> _logger;
+        private ILogger<ShipService>    _logger;
         private readonly HttpClient _httpClient;
-
-        /// <summary>
-        /// Holds the HTTP response message
-        /// </summary>
-        private HttpResponseMessage? _response  { get; set; }
 
         public ShipService(ILogger<ShipService> logger, IHttpClientFactory httpClientFactory)
         {
             _logger     = logger;
             _httpClient = httpClientFactory.CreateClient("GlobalClient");
         }
+
+        /// <summary>
+        /// Holds the HTTP response message
+        /// </summary>
+        private HttpResponseMessage? _response { get; set; }
 
         /// <summary>
         /// Calls the API to place ships and returns the result

@@ -10,19 +10,19 @@ namespace Services.Services.Classes
     public class ShootService : IShootService
     {
         // services
-        private ILogger<ShootService> _logger;
+        private ILogger<ShootService>   _logger;
         private readonly HttpClient _httpClient;
-
-        /// <summary>
-        /// Holds the HTTP response message
-        /// </summary>
-        private HttpResponseMessage? _response { get; set; }
 
         public ShootService(ILogger<ShootService> logger, IHttpClientFactory httpClientFactory)
         {
             _logger     = logger;
             _httpClient = httpClientFactory.CreateClient("GlobalClient");
         }
+
+        /// <summary>
+        /// Holds the HTTP response message
+        /// </summary>
+        private HttpResponseMessage? _response { get; set; }
 
         /// <summary>
         /// Retrieves the result of a shot based on the provided position
