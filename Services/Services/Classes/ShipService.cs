@@ -49,14 +49,16 @@ namespace Services.Services.Classes
                     if (!string.IsNullOrEmpty(result))
                     {
                         // deserializing the result
-                        var data = JsonConvert.DeserializeObject<Result>(result);
-
-                        // returns the result
-                        return new Result { Success = true };
+                        var data = JsonConvert.DeserializeObject<Result>(result) ?? new Result();
+                        if (data.Success)
+                            // returns the result
+                            return new Result { Success = data.Success };
+                        else
+                            return new Result { Message = "Error occurred." };
                     }
 
                     // returns the result
-                    return new Result {Message= "Error occurred.", Success = false };
+                    return new Result { Message = "Error occurred." };
                 }
             }
             catch (HttpRequestException ex)
