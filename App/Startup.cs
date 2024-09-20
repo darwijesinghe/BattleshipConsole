@@ -39,7 +39,7 @@ namespace App
         {
             try
             {
-                // prits the header
+                // prints the header
                 PrintHeader();
 
                 string answer;
