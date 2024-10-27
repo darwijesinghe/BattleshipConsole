@@ -8,7 +8,7 @@ namespace Services.Services.Classes
 {
     public class ShipService : IShipService
     {
-        // services
+        // Services
         private ILogger<ShipService>    _logger;
         private readonly HttpClient _httpClient;
 
@@ -24,10 +24,10 @@ namespace Services.Services.Classes
         private HttpResponseMessage? _response { get; set; }
 
         /// <summary>
-        /// Calls the API to place ships and returns the result
+        /// Calls the API to place ships and returns the result.
         /// </summary>
         /// <returns>
-        /// The <see cref="Result"/> indicating the outcome of the API call
+        /// The <see cref="Result"/> indicating the outcome of the API call.
         /// </returns>
         public async Task<Result> PlaceShips()
         {

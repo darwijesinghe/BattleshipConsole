@@ -13,7 +13,7 @@
         /// <summary>
         /// Response message
         /// </summary>
-        public string? Message  { get; set; } = "Ok";
+        public string? Message  { get; set; } = "Ok.";
 
         // Extra fields ---------------------
         public int Id           { get; set; }
@@ -32,7 +32,7 @@
         /// <summary>
         /// Response message
         /// </summary>
-        public string? Message  { get; set; } = "Ok";
+        public string? Message  { get; set; } = "Ok.";
 
         // Extra fields ---------------------
         public int Id           { get; set; }

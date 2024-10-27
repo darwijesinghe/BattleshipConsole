@@ -9,7 +9,7 @@ namespace Services.Services.Classes
 {
     public class ShootService : IShootService
     {
-        // services
+        // Services
         private ILogger<ShootService>   _logger;
         private readonly HttpClient _httpClient;
 
@@ -25,11 +25,11 @@ namespace Services.Services.Classes
         private HttpResponseMessage? _response { get; set; }
 
         /// <summary>
-        /// Retrieves the result of a shot based on the provided position
+        /// Retrieves the result of a shot based on the provided position.
         /// </summary>
-        /// <param name="position">The position of the shot as a <see cref="ShootPosition"/> object</param>
+        /// <param name="position">The position of the shot as a <see cref="ShootPosition"/> object.</param>
         /// <returns>
-        /// The <see cref="Result{ShootResult}"/> indicating the outcome of the shot
+        /// The <see cref="Result{ShootResult}"/> indicating the outcome of the shot.
         /// </returns>
         public async Task<Result<ShootResult>> ShootResult(ShootPosition position)
         {

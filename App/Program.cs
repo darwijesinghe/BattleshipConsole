@@ -45,8 +45,8 @@ class Program
             })
             .Build();
 
-        // automatically resolve and inject any dependencies required by the Startup class's constructor.
-        // this helps in creating instances of classes that have dependencies registered in the DI container
+        // Automatically resolve and inject any dependencies required by the Startup class's constructor.
+        // This helps in creating instances of classes that have dependencies registered in the DI container.
 
         var service = ActivatorUtilities.CreateInstance<Startup>(host.Services);
         await service.Run();

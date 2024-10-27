@@ -6,11 +6,11 @@
     public static class Helper
     {
         /// <summary>
-        /// Checks whether the given <see cref="IEnumerable{T}"/> has any non-null elements
+        /// Checks whether the given <see cref="IEnumerable{T}"/> has any non-null elements.
         /// </summary>
-        /// <param name="data">The collection of elements to check for non-null values</param>
+        /// <param name="data">The collection of elements to check for non-null values.</param>
         /// <returns>
-        /// <c>true</c> if the collection is not null and contains at least one non-null element; otherwise, <c>false</c>
+        /// <c>true</c> if the collection is not null and contains at least one non-null element; otherwise, <c>false</c>.
         /// </returns>
         public static bool HasValue<T>(this IEnumerable<T> data)
         {
@@ -18,12 +18,12 @@
         }
 
         /// <summary>
-        /// Converts a number to its corresponding uppercase letter in the alphabet
+        /// Converts a number to its corresponding uppercase letter in the alphabet.
         /// For example, 1 = 'A', 2 = 'B', ..., 8 = 'H'.
         /// </summary>
-        /// <param name="number">The number to convert to a letter (1-10)</param>
+        /// <param name="number">The number to convert to a letter (1-10).</param>
         /// <returns>
-        /// The corresponding uppercase letter for the given number
+        /// The corresponding uppercase letter for the given number.
         /// </returns>
 
         public static string LetterFromNumber(int number)
@@ -57,12 +57,12 @@
         }
 
         /// <summary>
-        /// Converts a single uppercase letter (A-J) to its corresponding number in the alphabet
+        /// Converts a single uppercase letter (A-J) to its corresponding number in the alphabet.
         /// For example, 'A' = 1, 'B' = 2, ..., 'H' = 8
         /// </summary>
         /// <param name="letter">The uppercase letter to convert (A-J).</param>
         /// <returns>
-        /// The corresponding number for the given letter
+        /// The corresponding number for the given letter.
         /// </returns>
 
         public static int NumberFromLetter(string letter)

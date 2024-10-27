@@ -8,7 +8,7 @@ namespace App
 {
     public class Startup
     {
-        // services
+        // Services
         private readonly ILogger<Startup>    _logger;
         private readonly IShipService   _shipService;
         private readonly IShootService _shootService;
@@ -33,7 +33,7 @@ namespace App
         }
 
         /// <summary>
-        /// Main function. This will handle all the sub processes
+        /// Main function. This will handle all the sub processes.
         /// </summary>
         private async Task Start()
         {
@@ -111,7 +111,7 @@ namespace App
         }
 
         /// <summary>
-        /// Prints the main header
+        /// Prints the main header.
         /// </summary>
         private void PrintHeader()
         {
@@ -134,10 +134,10 @@ namespace App
         }
 
         /// <summary>
-        /// Places ships on the game board, ensuring valid positions
+        /// Places ships on the game board, ensuring valid positions.
         /// </summary>
         /// <returns>
-        /// The task result is true if the ships were placed successfully, otherwise false
+        /// The task result is true if the ships were placed successfully, otherwise false.
         /// </returns>
 
         private async Task<bool> PlaceShipsOnBoard()
@@ -162,8 +162,7 @@ namespace App
         /// Draws the current game board based on the shooting history.
         /// Displays the positions where ships were hit, miss or sunk on the board.
         /// </summary>
-        /// <param name="history">The history of the shooting results including hit, miss, invalid, same or sunk positions</param>
-
+        /// <param name="history">The history of the shooting results including hit, miss, invalid, same or sunk positions.</param>
         private void DrawBoard(ShootResult history)
         {
             try
@@ -293,7 +292,7 @@ namespace App
         }
 
         /// <summary>
-        /// Updates the status of the shot
+        /// Updates the status of the shot.
         /// </summary>
         private void ShotStatus()
         {
@@ -317,11 +316,11 @@ namespace App
         }
 
         /// <summary>
-        /// Prepares a shoot position based on the given string
+        /// Prepares a shoot position based on the given string.
         /// </summary>
-        /// <param name="position">The position as a string (e.g., "A1", "B5")</param>
+        /// <param name="position">The position as a string (e.g., "A1", "B5").</param>
         /// <returns>
-        /// A <see cref="ShootPosition"/> object representing the prepared position
+        /// A <see cref="ShootPosition"/> object representing the prepared position.
         /// </returns>
         private ShootPosition PrepareShootPosition(string position)
         {
@@ -354,11 +353,11 @@ namespace App
         }
 
         /// <summary>
-        /// Retrieves the status of a shot based on the given shoot position
+        /// Retrieves the status of a shot based on the given shoot position.
         /// </summary>
-        /// <param name="position">The position of the shot as a <see cref="ShootPosition"/> object</param>
+        /// <param name="position">The position of the shot as a <see cref="ShootPosition"/> object.</param>
         /// <returns>
-        /// The status of the shot as a <see cref="ShootStatus"/> object
+        /// The status of the shot as a <see cref="ShootStatus"/> object.
         /// </returns>
         private ShootStatus GetShootStatus(ShootPosition position)
         {
@@ -375,12 +374,12 @@ namespace App
         }
 
         /// <summary>
-        /// Executes a task while displaying a processing indicator
+        /// Executes a task while displaying a processing indicator.
         /// </summary>
-        /// <typeparam name="T">The type of the result returned by the task</typeparam>
-        /// <param name="task">A function that returns a Task of type T to be executed</param>
+        /// <typeparam name="T">The type of the result returned by the task.</typeparam>
+        /// <param name="task">A function that returns a Task of type T to be executed.</param>
         /// <returns>
-        /// A Task of type T representing the result of the executed task
+        /// A Task of type T representing the result of the executed task.
         /// </returns>
         private async Task<T> ShowProcessingWhileTaskCompletes<T>(Func<Task<T>> task)
         {
@@ -419,7 +418,7 @@ namespace App
         }
 
         /// <summary>
-        /// Prints the outcome of the shots
+        /// Prints the outcome of the shots.
         /// </summary>
         private void ShotOutcome()
         {
@@ -447,7 +446,7 @@ namespace App
         }
 
         /// <summary>
-        /// Handles the exit process of the application
+        /// Handles the exit process of the application.
         /// </summary>
         private async Task Exit()
         {
@@ -457,7 +456,7 @@ namespace App
         }
 
         /// <summary>
-        /// Resets the game board
+        /// Resets the game board.
         /// </summary>
         private void ResetBoard()
         {
@@ -466,9 +465,9 @@ namespace App
         }
 
         /// <summary>
-        /// Prints an error on the game board
+        /// Prints an error on the game board.
         /// </summary>
-        /// <param name="message">The error message</param>
+        /// <param name="message">The error message.</param>
         private void PrintError(string message)
         {
             Console.ForegroundColor = ConsoleColor.Red;
