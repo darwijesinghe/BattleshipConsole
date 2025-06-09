@@ -6,6 +6,9 @@ using System.Net;
 
 namespace Services.Services.Classes
 {
+    /// <summary>
+    /// Implements the <see cref="IShipService"/> functionalities.
+    /// </summary>
     public class ShipService : IShipService
     {
         // Services

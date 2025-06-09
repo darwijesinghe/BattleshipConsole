@@ -3,7 +3,7 @@
 namespace Domain.Models
 {
     /// <summary>
-    /// Domain class for the shoot positions
+    /// Domain class for the shoot positions.
     /// </summary>
     public class ShootPosition
     {
@@ -14,17 +14,17 @@ namespace Domain.Models
         }
 
         /// <summary>
-        /// Shooted row of the grid
+        /// Shooted row of the grid.
         /// </summary>
         public int Row                  { get; set; }
 
         /// <summary>
-        /// Shooted column of the grid
+        /// Shooted column of the grid.
         /// </summary>
         public int Column               { get; set; }
 
         /// <summary>
-        /// Status of the hit
+        /// Status of the hit.
         /// </summary>
         public ShootStatus ShootStatus  { get; set; }
 

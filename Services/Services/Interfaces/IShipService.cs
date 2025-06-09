@@ -2,6 +2,9 @@
 
 namespace Services.Services.Interfaces
 {
+    /// <summary>
+    /// Defines contracts of ship handling related functionalities.
+    /// </summary>
     public interface IShipService
     {
         /// <summary>

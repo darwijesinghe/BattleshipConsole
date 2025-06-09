@@ -3,6 +3,9 @@ using Services.Response;
 
 namespace Services.Services.Interfaces
 {
+    /// <summary>
+    /// Defines contracts of shoot handling related functionalities.
+    /// </summary>
     public interface IShootService
     {
         /// <summary>

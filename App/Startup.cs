@@ -22,12 +22,15 @@ namespace App
         }
 
         /// <summary>
-        /// Shoot history
+        /// Shoot history.
         /// </summary>
         private ShootResult _history { get; set; }
 
         public async Task Run() 
         {
+            // sets the title of the console window
+            Console.Title = "Battleship Game";
+
             // startup
             await Start();
         }
@@ -119,9 +122,9 @@ namespace App
             {
                 Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("------------------------------");
-                Console.WriteLine("Battleship Assessment WireApps");
-                Console.WriteLine("------------------------------");
+                Console.WriteLine("---------------------------");
+                Console.WriteLine("The Battleship - C# Version");
+                Console.WriteLine("---------------------------");
                 Console.WriteLine();
                 Console.ResetColor();
             }

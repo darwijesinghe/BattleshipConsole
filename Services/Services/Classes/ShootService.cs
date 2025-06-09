@@ -7,6 +7,9 @@ using System.Net;
 
 namespace Services.Services.Classes
 {
+    /// <summary>
+    /// Implements the <see cref="IShootService"/> functionalities.
+    /// </summary>
     public class ShootService : IShootService
     {
         // Services

@@ -3,7 +3,7 @@
 namespace Domain.Models
 {
     /// <summary>
-    /// Domian class for the shoot result
+    /// Domian class for the shoot result.
     /// </summary>
     public class ShootResult
     {
@@ -14,17 +14,17 @@ namespace Domain.Models
         }
 
         /// <summary>
-        /// Type of shoot
+        /// Type of shoot.
         /// </summary>
         public ShootStatus ShootStatus          { get; set; }
 
         /// <summary>
-        /// Ship that was damaged
+        /// Ship that was damaged.
         /// </summary>
         public string DamagedShip               { get; set; }
 
         /// <summary>
-        /// Shoot history and shooted positions
+        /// Shoot history and shooted positions.
         /// </summary>
         public List<ShootPosition> ShootHistory { get; set; }
 
